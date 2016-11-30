@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convertisseur</title>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container-fluid nav">
+      <a class="boutton" href="#ttc">HT/TTC</a>
+      <a class="boutton" href="#exampleInputConvertir">Convertir</a>
+      <a class="boutton" href="#exampleInputchoisir">TVA</a>
+      <div class="logo">
+      <h1>CONVERTISSEUR</h1>
+      </div>
+    </div>
+
+    <div class="container-fluid color">
+     <div class="container">
+       <div class="row">
+
+       <div class="col-lg-12">
+     <form class="form-inline" method="post" action="traitement.php">
+      <div class="form-group">
+   <label class="sr-only" for="exampleInputchoisir">20</label>
+   <div class="input-group">
+     <div class="input-group-addon">Choisir la valeur de la TVA</div>
+     <input type="number" class="form-control" id="exampleInputchoisir" placeholder="20">
+     <div class="input-group-addon">%</div>
+   </div>
+ </div>
+
+    </form>
+</div>
+<br></br>
+   <div class="col-lg-12 section">
+  <form class="form-inline" method="post" action="traitement.php">
+      <div class="form-group">
+   <label class="sr-only" for="exampleInputConvertir">10</label>
+   <div class="input-group">
+     <div class="input-group-addon">Convertir</div>
+     <input type="number" class="form-control convertir" id="exampleInputConvertir" placeholder="10">
+     <div class="input-group-addon">€</div>
+   </div>
+ </div>
+</form>
+ </div>
+<br></br>
+
+<div class="col-lg-12 section">
+    <form class="form-inline" method="post" action="traitement.php">
+   <div class="form-group">
+       <label for="ttc"></label>
+       <div class="input-group">
+       <div class="input-group-addon">Choisir</div>
+       <select class="form-control" name="ttc" id="ttc">
+           <option value="HTC">HTC</option>
+           <option value="TTC">TTC</option>
+       </select>
+  </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+  </body>
+  </html>
